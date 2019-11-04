@@ -1,0 +1,69 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "import",
+    "jsx-a11y"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "jest": true
+  },
+  "rules": {
+    "one-var": [2, {"var":"always"}],
+    "new-cap": [ 2, {
+      "capIsNewExceptions": ["List", "Map", "Set"]
+      }
+    ],
+    "react/no-multi-comp": 0,
+    "no-restricted-globals": ["off", "location"],
+    "react/forbid-prop-types": 0,
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "no-param-reassign": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 2,
+    "import/extensions": 0,
+    "comma-dangle": 0,
+    // not sure why airbnb turned this on. gross!
+    "indent": [ 2, 2, { "SwitchCase": 1 }],
+    "no-console": 0,
+    "no-alert": 0,
+    "react/prefer-stateless-function": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-a11y/anchor-is-valid": [ "error", { "components": [ "Link" ], "specialLink": [ "to" ] } ],
+    "react/require-default-props": [0],
+    "react/no-array-index-key": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "no-underscore-dangle": ["off"],
+    //"no-multi-assign": "off"
+    "no-unused-expressions": [1, { "allowTernary": true }],
+    "no-nested-ternary": "off",
+    "jsx-a11y/media-has-caption": "off",
+    "jsx-a11y/label-has-for":"off",
+    "jsx-a11y/accessible-emoji":"off",
+    "jsx-a11y/interactive-supports-focus":"off"
+  },
+
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": [
+        "node_modules",
+        "src"
+      ]
+    }
+  },
+  "globals": {
+    "__DEVELOPMENT__": true,
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "__DISABLE_SSR__": true,
+    "__DEVTOOLS__": true
+  }
+}
