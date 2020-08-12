@@ -45,7 +45,7 @@
     "redux-thunk": "^2.2.0",
     "request": "^2.85.0",
     "require-from-string": "^2.0.1",
-    "serialize-javascript": "^1.4.0"
+    "serialize-javascript": "^3.1.0"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.6.0",
